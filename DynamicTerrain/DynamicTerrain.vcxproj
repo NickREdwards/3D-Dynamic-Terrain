@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Geometry\CubicSurfaceExtractor.h" />
+    <ClInclude Include="Geometry\DynamicTerrainChunk.h" />
+    <ClInclude Include="Geometry\DynamicTerrainChunkUpdater.h" />
+    <ClInclude Include="Geometry\DynamicTerrainHelpers.h" />
+    <ClInclude Include="Geometry\DynamicTerrainManipulator.h" />
+    <ClInclude Include="Geometry\DynamicTerrainSettings.h" />
+    <ClInclude Include="Geometry\DynamicTerrainSystem.h" />
+    <ClInclude Include="Geometry\ISurfaceExtractor.h" />
+    <ClInclude Include="Geometry\MarchingCubesSurfaceExtractor.h" />
+    <ClInclude Include="Geometry\MarchingCubesTables.h" />
+    <ClInclude Include="Geometry\MeshDrawLock.h" />
+    <ClInclude Include="Geometry\WaterPlane.h" />
+    <ClInclude Include="Graphics\DX11Renderer.h" />
+    <ClInclude Include="Geometry\Mesh.h" />
+    <ClInclude Include="Graphics\BaseEffect.h" />
+    <ClInclude Include="Graphics\DX11Graphics.h" />
+    <ClInclude Include="Graphics\EffectManager.h" />
+    <ClInclude Include="Graphics\EffectStructures.h" />
+    <ClInclude Include="Graphics\GameLoop.h" />
+    <ClInclude Include="Graphics\ICamera.h" />
+    <ClInclude Include="Graphics\IEffect.h" />
+    <ClInclude Include="Graphics\IGraphicsComponent.h" />
+    <ClInclude Include="Graphics\IRenderer.h" />
+    <ClInclude Include="Graphics\IsometricCamera.h" />
+    <ClInclude Include="Graphics\Settings.h" />
+    <ClInclude Include="Graphics\Window.h" />
+    <ClInclude Include="Core\BaseGame.h" />
+    <ClInclude Include="Core\IGame.h" />
+    <ClInclude Include="Core\MethodHelpers.h" />
+    <ClInclude Include="Geometry\Object3D.h" />
+    <ClInclude Include="Geometry\Vertex.h" />
+    <ClInclude Include="Helpers\AABB.h" />
+    <ClInclude Include="Helpers\Debug.h" />
+    <ClInclude Include="Helpers\IntPoint.h" />
+    <ClInclude Include="Helpers\Math.h" />
+    <ClInclude Include="Input\BasicWindowsInput.h" />
+    <ClInclude Include="Input\BasicWindowsInputKeyboard.h" />
+    <ClInclude Include="Input\BasicWindowsInputMouse.h" />
+    <ClInclude Include="Input\IInputComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Geometry\CubicSurfaceExtractor.cpp" />
+    <ClCompile Include="Geometry\DynamicTerrainChunk.cpp" />
+    <ClCompile Include="Geometry\DynamicTerrainChunkUpdater.cpp" />
+    <ClCompile Include="Geometry\DynamicTerrainHelpers.cpp" />
+    <ClCompile Include="Geometry\DynamicTerrainManipulator.cpp" />
+    <ClCompile Include="Geometry\DynamicTerrainSystem.cpp" />
+    <ClCompile Include="Geometry\MarchingCubesSurfaceExtractor.cpp" />
+    <ClCompile Include="Geometry\Object3D.cpp" />
+    <ClCompile Include="Geometry\WaterPlane.cpp" />
+    <ClCompile Include="Graphics\BaseEffect.cpp" />
+    <ClCompile Include="Graphics\DX11Graphics.cpp" />
+    <ClCompile Include="Graphics\DX11Renderer.cpp" />
+    <ClCompile Include="Graphics\EffectManager.cpp" />
+    <ClCompile Include="Graphics\GameLoop.cpp" />
+    <ClCompile Include="Graphics\Window.cpp" />
+    <ClCompile Include="Core\BaseGame.cpp" />
+    <ClCompile Include="Geometry\Mesh.cpp" />
+    <ClCompile Include="Input\BasicWindowsInput.cpp" />
+    <ClCompile Include="Input\BasicWindowsInputKeyboard.cpp" />
+    <ClCompile Include="Input\BasicWindowsInputMouse.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C46D1213-5ACB-4AD9-88F6-891BC545BF30}</ProjectGuid>
+    <RootNamespace>DynamicTerrain</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)..\Libraries\Effects11;$(ProjectDir)..\Libraries\libnoise\include;$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(ProjectDir)..\Libraries\Effects11;$(ProjectDir)..\Libraries\libnoise\bin;$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <ExecutablePath>$(ExecutablePath);$(DXSDK_DIR)Utilities\bin\x86;</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)..\Libraries\Effects11;$(ProjectDir)..\Libraries\libnoise\include;$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(ProjectDir)..\Libraries\Effects11;$(ProjectDir)..\Libraries\libnoise\bin;$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <ExecutablePath>$(ExecutablePath);$(DXSDK_DIR)Utilities\bin\x86;</ExecutablePath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;Effects11d.lib;libnoise.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;Effects11.lib;libnoise.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers />
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

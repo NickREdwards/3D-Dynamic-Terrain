@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GraphicsComponent">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DynamicTerrain.Tests.cpp" />
+    <ClCompile Include="gtest\src\gtest-all.cc" />
+    <ClCompile Include="gmock\src\gmock-all.cc">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BasicGameTests.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\Mesh.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\EffectManager.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DX11Renderer.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\IsometricCamera.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\BaseEffect.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\CubicSurfaceExtractor.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\DynamicTerrainChunk.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\BasicWindowsInput.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers\AABB.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers\Math.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\VoxelRef.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DX11Graphics.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\DynamicTerrainChunkUpdater.cpp">
+      <Filter>GraphicsComponent</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shared.h" />
+    <ClInclude Include="Graphics\Mocks\MockID3D11Device.h" />
+    <ClInclude Include="Graphics\Mocks\MockID3D11DeviceContext.h" />
+    <ClInclude Include="Graphics\Mocks\MockID3DX11Effect.h" />
+    <ClInclude Include="Graphics\Mocks\MockIEffect.h" />
+    <ClInclude Include="Graphics\Mocks\MockIGame.h" />
+    <ClInclude Include="Mocks\MockID3D11Device.h" />
+    <ClInclude Include="Mocks\MockID3D11DeviceContext.h" />
+    <ClInclude Include="Mocks\MockID3DX11Effect.h" />
+    <ClInclude Include="Mocks\MockIEffect.h" />
+    <ClInclude Include="Mocks\MockIGame.h" />
+    <ClInclude Include="Mocks\MockIMesh.h" />
+    <ClInclude Include="Mocks\MockID3D11Buffer.h" />
+    <ClInclude Include="Mocks\MockIEffectManager.h" />
+    <ClInclude Include="Mocks\MockID3D11InputLayout.h" />
+    <ClInclude Include="Mocks\MockIDynamicTerrainSystem.h" />
+  </ItemGroup>
+</Project>

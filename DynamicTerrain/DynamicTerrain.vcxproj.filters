@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Components">
+      <UniqueIdentifier>{e4504f5d-e8eb-499b-b856-fe85d1fb23fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\IGame.h" />
+    <ClInclude Include="Core\BaseGame.h" />
+    <ClInclude Include="Helpers\Debug.h" />
+    <ClInclude Include="Core\MethodHelpers.h" />
+    <ClInclude Include="Geometry\Mesh.h" />
+    <ClInclude Include="Geometry\Vertex.h" />
+    <ClInclude Include="Graphics\BaseEffect.h" />
+    <ClInclude Include="Graphics\DX11Graphics.h" />
+    <ClInclude Include="Graphics\DX11Renderer.h" />
+    <ClInclude Include="Graphics\EffectManager.h" />
+    <ClInclude Include="Graphics\EffectStructures.h" />
+    <ClInclude Include="Graphics\GameLoop.h" />
+    <ClInclude Include="Graphics\IEffect.h" />
+    <ClInclude Include="Graphics\IGraphicsComponent.h" />
+    <ClInclude Include="Graphics\IRenderer.h" />
+    <ClInclude Include="Graphics\Settings.h" />
+    <ClInclude Include="Graphics\Window.h" />
+    <ClInclude Include="Geometry\Object3D.h" />
+    <ClInclude Include="Geometry\WaterPlane.h" />
+    <ClInclude Include="Graphics\ICamera.h" />
+    <ClInclude Include="Graphics\IsometricCamera.h" />
+    <ClInclude Include="Helpers\Math.h" />
+    <ClInclude Include="Geometry\DynamicTerrainSystem.h" />
+    <ClInclude Include="Geometry\DynamicTerrainChunk.h" />
+    <ClInclude Include="Geometry\DynamicTerrainSettings.h" />
+    <ClInclude Include="Geometry\ISurfaceExtractor.h" />
+    <ClInclude Include="Geometry\CubicSurfaceExtractor.h" />
+    <ClInclude Include="Input\IInputComponent.h" />
+    <ClInclude Include="Input\BasicWindowsInput.h" />
+    <ClInclude Include="Geometry\DynamicTerrainChunkUpdater.h" />
+    <ClInclude Include="Helpers\AABB.h" />
+    <ClInclude Include="Geometry\DynamicTerrainManipulator.h" />
+    <ClInclude Include="Geometry\MeshDrawLock.h" />
+    <ClInclude Include="Geometry\MarchingCubesSurfaceExtractor.h" />
+    <ClInclude Include="Geometry\MarchingCubesTables.h" />
+    <ClInclude Include="Geometry\DynamicTerrainHelpers.h" />
+    <ClInclude Include="Input\BasicWindowsInputMouse.h" />
+    <ClInclude Include="Helpers\IntPoint.h" />
+    <ClInclude Include="Input\BasicWindowsInputKeyboard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\BaseGame.cpp" />
+    <ClCompile Include="Geometry\Mesh.cpp" />
+    <ClCompile Include="Graphics\DX11Graphics.cpp" />
+    <ClCompile Include="Graphics\DX11Renderer.cpp" />
+    <ClCompile Include="Graphics\EffectManager.cpp" />
+    <ClCompile Include="Graphics\GameLoop.cpp" />
+    <ClCompile Include="Graphics\Window.cpp" />
+    <ClCompile Include="Geometry\Object3D.cpp" />
+    <ClCompile Include="Geometry\WaterPlane.cpp" />
+    <ClCompile Include="Graphics\BaseEffect.cpp" />
+    <ClCompile Include="Geometry\DynamicTerrainChunk.cpp" />
+    <ClCompile Include="Geometry\DynamicTerrainSystem.cpp" />
+    <ClCompile Include="Geometry\CubicSurfaceExtractor.cpp" />
+    <ClCompile Include="Input\BasicWindowsInput.cpp" />
+    <ClCompile Include="Geometry\DynamicTerrainChunkUpdater.cpp" />
+    <ClCompile Include="Geometry\DynamicTerrainManipulator.cpp" />
+    <ClCompile Include="Geometry\MarchingCubesSurfaceExtractor.cpp" />
+    <ClCompile Include="Geometry\DynamicTerrainHelpers.cpp" />
+    <ClCompile Include="Input\BasicWindowsInputMouse.cpp" />
+    <ClCompile Include="Input\BasicWindowsInputKeyboard.cpp" />
+  </ItemGroup>
+</Project>

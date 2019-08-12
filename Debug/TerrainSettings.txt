@@ -1,0 +1,41 @@
+CubeSize 8
+NumMeshingThreads 2
+NumUpdateThreads 2
+NoiseSeed 4532345
+NoiseOctaves 6
+NoiseFrequency 0.5
+NoisePersistence 0.5
+IsoLevel 0.0
+
+# Smooth Terrain
+# ==============
+# CubeSize 8
+# NumMeshingThreads 2
+# NumUpdateThreads 2
+# NoiseSeed 64564
+# NoiseOctaves 6
+# NoiseFrequency 0.75
+# NoisePersistence 0.25
+# IsoLevel 0.0
+
+# Rocky Terrain
+# ==============
+# CubeSize 8
+# NumMeshingThreads 2
+# NumUpdateThreads 2
+# NoiseSeed 1321
+# NoiseOctaves 6
+# NoiseFrequency 0.99
+# NoisePersistence 0.75
+# IsoLevel 0.0
+
+# Defaults
+# ========
+# CubeSize 8
+# NumMeshingThreads 2
+# NumUpdateThreads 2
+# NoiseSeed 4532345
+# NoiseOctaves 6
+# NoiseFrequency 0.5
+# NoisePersistence 0.5
+# IsoLevel 0.0
